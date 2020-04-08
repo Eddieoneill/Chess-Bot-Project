@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DD4C1352E013F3D1AD0F762 /* Pods_ChessBotProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020082C8D460041D2B6F4206 /* Pods_ChessBotProject.framework */; };
+		6C0687B1243E797700E8C090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687B0243E797700E8C090 /* AppDelegate.swift */; };
+		6C0687B3243E797700E8C090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687B2243E797700E8C090 /* SceneDelegate.swift */; };
+		6C0687BA243E797800E8C090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0687B9243E797800E8C090 /* Assets.xcassets */; };
+		6C0687BD243E797800E8C090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0687BB243E797800E8C090 /* LaunchScreen.storyboard */; };
+		6C0687C5243E7B3000E8C090 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C0687C4243E7B3000E8C090 /* GoogleService-Info.plist */; };
+		6C0687D6243E810900E8C090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0687D5243E810900E8C090 /* Main.storyboard */; };
+		6C0687D9243E817D00E8C090 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687D8243E817D00E8C090 /* LoginViewController.swift */; };
+		6C0687DB243E818F00E8C090 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687DA243E818F00E8C090 /* CreateAccountViewController.swift */; };
+		6C0687E1243E820000E8C090 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687DD243E81FC00E8C090 /* UIImage+Extension.swift */; };
+		6C0687E2243E820000E8C090 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687DE243E81FE00E8C090 /* Date+Extension.swift */; };
+		6C0687E3243E820000E8C090 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687DF243E81FF00E8C090 /* Extension+UIViewController.swift */; };
+		6C0687E4243E820000E8C090 /* UIViewController+AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687E0243E820000E8C090 /* UIViewController+AlertExtension.swift */; };
+		6C0687E8243E846E00E8C090 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0687E7243E846E00E8C090 /* LoginView.storyboard */; };
+		6C0687EB243E853600E8C090 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687EA243E853600E8C090 /* AuthenticationSession.swift */; };
+		6C0687ED243E854D00E8C090 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687EC243E854D00E8C090 /* DatabaseService.swift */; };
+		6C0687EF243E8A0700E8C090 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687EE243E8A0700E8C090 /* MainTabBarController.swift */; };
+		6C0687F1243E8A4300E8C090 /* ChessPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0687F0243E8A4300E8C090 /* ChessPlayViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020082C8D460041D2B6F4206 /* Pods_ChessBotProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChessBotProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0687AD243E797700E8C090 /* ChessBotProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBotProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0687B0243E797700E8C090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C0687B2243E797700E8C090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6C0687B9243E797800E8C090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C0687BC243E797800E8C090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C0687BE243E797800E8C090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C0687C4243E7B3000E8C090 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C0687D5243E810900E8C090 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6C0687D8243E817D00E8C090 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6C0687DA243E818F00E8C090 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		6C0687DD243E81FC00E8C090 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		6C0687DE243E81FE00E8C090 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		6C0687DF243E81FF00E8C090 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		6C0687E0243E820000E8C090 /* UIViewController+AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertExtension.swift"; sourceTree = "<group>"; };
+		6C0687E7243E846E00E8C090 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		6C0687EA243E853600E8C090 /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		6C0687EC243E854D00E8C090 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		6C0687EE243E8A0700E8C090 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6C0687F0243E8A4300E8C090 /* ChessPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPlayViewController.swift; sourceTree = "<group>"; };
+		C03FC0E567E068CB2D00A54D /* Pods-ChessBotProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessBotProject.debug.xcconfig"; path = "Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E5A65B0249009B1FF163F97B /* Pods-ChessBotProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessBotProject.release.xcconfig"; path = "Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C0687AA243E797700E8C090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD4C1352E013F3D1AD0F762 /* Pods_ChessBotProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17E62EFEEB00286BD91EB73B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C03FC0E567E068CB2D00A54D /* Pods-ChessBotProject.debug.xcconfig */,
+				E5A65B0249009B1FF163F97B /* Pods-ChessBotProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50A0D88A410085873165EB20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020082C8D460041D2B6F4206 /* Pods_ChessBotProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C0687A4243E797700E8C090 = {
+			isa = PBXGroup;
+			children = (
+				6C0687AF243E797700E8C090 /* ChessBotProject */,
+				6C0687AE243E797700E8C090 /* Products */,
+				17E62EFEEB00286BD91EB73B /* Pods */,
+				50A0D88A410085873165EB20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C0687AE243E797700E8C090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687AD243E797700E8C090 /* ChessBotProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C0687AF243E797700E8C090 /* ChessBotProject */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687E9243E851B00E8C090 /* FirebaseService */,
+				6C0687D7243E816000E8C090 /* Controllers */,
+				6C0687DC243E81CB00E8C090 /* Extensions */,
+				6C0687D0243E7ECF00E8C090 /* Supporting File */,
+				6C0687BB243E797800E8C090 /* LaunchScreen.storyboard */,
+				6C0687E7243E846E00E8C090 /* LoginView.storyboard */,
+				6C0687D5243E810900E8C090 /* Main.storyboard */,
+				6C0687C4243E7B3000E8C090 /* GoogleService-Info.plist */,
+				6C0687BE243E797800E8C090 /* Info.plist */,
+			);
+			path = ChessBotProject;
+			sourceTree = "<group>";
+		};
+		6C0687D0243E7ECF00E8C090 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687B0243E797700E8C090 /* AppDelegate.swift */,
+				6C0687B2243E797700E8C090 /* SceneDelegate.swift */,
+				6C0687B9243E797800E8C090 /* Assets.xcassets */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		6C0687D7243E816000E8C090 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687D8243E817D00E8C090 /* LoginViewController.swift */,
+				6C0687DA243E818F00E8C090 /* CreateAccountViewController.swift */,
+				6C0687EE243E8A0700E8C090 /* MainTabBarController.swift */,
+				6C0687F0243E8A4300E8C090 /* ChessPlayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C0687DC243E81CB00E8C090 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687DE243E81FE00E8C090 /* Date+Extension.swift */,
+				6C0687DF243E81FF00E8C090 /* Extension+UIViewController.swift */,
+				6C0687DD243E81FC00E8C090 /* UIImage+Extension.swift */,
+				6C0687E0243E820000E8C090 /* UIViewController+AlertExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C0687E9243E851B00E8C090 /* FirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+				6C0687EA243E853600E8C090 /* AuthenticationSession.swift */,
+				6C0687EC243E854D00E8C090 /* DatabaseService.swift */,
+			);
+			path = FirebaseService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C0687AC243E797700E8C090 /* ChessBotProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C0687C1243E797800E8C090 /* Build configuration list for PBXNativeTarget "ChessBotProject" */;
+			buildPhases = (
+				89415EEBE7805D65ECF7BC2B /* [CP] Check Pods Manifest.lock */,
+				6C0687A9243E797700E8C090 /* Sources */,
+				6C0687AA243E797700E8C090 /* Frameworks */,
+				6C0687AB243E797700E8C090 /* Resources */,
+				2009E2DBF666CE8A7924A0A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessBotProject;
+			productName = ChessBotProject;
+			productReference = 6C0687AD243E797700E8C090 /* ChessBotProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C0687A5243E797700E8C090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Edward O'Neill";
+				TargetAttributes = {
+					6C0687AC243E797700E8C090 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 6C0687A8243E797700E8C090 /* Build configuration list for PBXProject "ChessBotProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C0687A4243E797700E8C090;
+			productRefGroup = 6C0687AE243E797700E8C090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C0687AC243E797700E8C090 /* ChessBotProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C0687AB243E797700E8C090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0687BD243E797800E8C090 /* LaunchScreen.storyboard in Resources */,
+				6C0687C5243E7B3000E8C090 /* GoogleService-Info.plist in Resources */,
+				6C0687BA243E797800E8C090 /* Assets.xcassets in Resources */,
+				6C0687D6243E810900E8C090 /* Main.storyboard in Resources */,
+				6C0687E8243E846E00E8C090 /* LoginView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2009E2DBF666CE8A7924A0A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89415EEBE7805D65ECF7BC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChessBotProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C0687A9243E797700E8C090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0687E3243E820000E8C090 /* Extension+UIViewController.swift in Sources */,
+				6C0687EB243E853600E8C090 /* AuthenticationSession.swift in Sources */,
+				6C0687EF243E8A0700E8C090 /* MainTabBarController.swift in Sources */,
+				6C0687DB243E818F00E8C090 /* CreateAccountViewController.swift in Sources */,
+				6C0687D9243E817D00E8C090 /* LoginViewController.swift in Sources */,
+				6C0687E1243E820000E8C090 /* UIImage+Extension.swift in Sources */,
+				6C0687E2243E820000E8C090 /* Date+Extension.swift in Sources */,
+				6C0687F1243E8A4300E8C090 /* ChessPlayViewController.swift in Sources */,
+				6C0687ED243E854D00E8C090 /* DatabaseService.swift in Sources */,
+				6C0687E4243E820000E8C090 /* UIViewController+AlertExtension.swift in Sources */,
+				6C0687B1243E797700E8C090 /* AppDelegate.swift in Sources */,
+				6C0687B3243E797700E8C090 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C0687BB243E797800E8C090 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0687BC243E797800E8C090 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C0687BF243E797800E8C090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C0687C0243E797800E8C090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C0687C2243E797800E8C090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03FC0E567E068CB2D00A54D /* Pods-ChessBotProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = ChessBotProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.edward.ChessBotProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6C0687C3243E797800E8C090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A65B0249009B1FF163F97B /* Pods-ChessBotProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = ChessBotProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.edward.ChessBotProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C0687A8243E797700E8C090 /* Build configuration list for PBXProject "ChessBotProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0687BF243E797800E8C090 /* Debug */,
+				6C0687C0243E797800E8C090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C0687C1243E797800E8C090 /* Build configuration list for PBXNativeTarget "ChessBotProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0687C2243E797800E8C090 /* Debug */,
+				6C0687C3243E797800E8C090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C0687A5243E797700E8C090 /* Project object */;
+}
