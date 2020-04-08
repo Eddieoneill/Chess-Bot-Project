@@ -139,12 +139,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr0-XS-63W">
-                                <rect key="frame" x="20" y="44" width="42" height="44"/>
+                                <rect key="frame" x="20" y="44" width="51" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6UM-F6-RYe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Cncel"/>
+                                <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelButtonPressed:" destination="IdT-cC-Bnf" eventType="touchUpInside" id="6T9-6D-t4c"/>
                                     <action selector="createButtonPressed:" destination="vBY-Gn-FXc" eventType="touchUpInside" id="OMC-8o-c5L"/>
