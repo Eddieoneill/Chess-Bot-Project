@@ -23,8 +23,8 @@ class ChessPlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         chessBoard.backgroundColor = .systemGray6
+        chessBoard.player2StartLabel.isHidden = true
         view = chessBoard
-        //view.backgroundColor = .systemGray6
         chessBoard.collectionView.dataSource = self
         chessBoard.collectionView.delegate = self
         chessBoard.collectionView.register(ChessBoardCell.self, forCellWithReuseIdentifier: "chessBoardCell")
@@ -230,17 +230,21 @@ extension ChessPlayViewController: UICollectionViewDelegateFlowLayout, UICollect
             }
         } else if cell.backgroundColor == .red {
             guard let selectedCell = selectedCell else { return }
-            var player = ""
+//            var player = ""
             
             movementManager.moveToSelected(cell, selectedCell)
             cell.resetBoardBackGround(boardMatrix)
             turnCounter += 1
             if turnCounter % 2 == 0 {
-                player = "Player1"
+//                player = "Player1"
+                chessBoard.player1StartLabel.isHidden = false
+                chessBoard.player2StartLabel.isHidden = true
             } else {
-                player = "Player2"
+//                player = "Player2"
+                chessBoard.player1StartLabel.isHidden = true
+                chessBoard.player2StartLabel.isHidden = false
             }
-            showAlert(title: "\(player)'s turn", message: "Please select your move")
+//            showAlert(title: "\(player)'s turn", message: "Please select your move")
         }
         
         if cell.isWhitePiece {

@@ -41,6 +41,22 @@ class ChessBoardView: UIView {
         return label
     }()
     
+    public lazy var player1StartLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Your turn"
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    public lazy var player2StartLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Your turn"
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textAlignment = .center
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
@@ -54,7 +70,9 @@ class ChessBoardView: UIView {
     private func commonInit() {
         setupCollectionViewConstraints()
         setupPlayer1LabelConstraints()
+        setupPlayer1StartLabelConstraints()
         setupPlayer2LabelConstraints()
+        setupPlayer2StartLabelConstraints()
     }
     
     private func setupCollectionViewConstraints() {
@@ -78,6 +96,16 @@ class ChessBoardView: UIView {
         ])
     }
     
+    private func setupPlayer1StartLabelConstraints() {
+        addSubview(player1StartLabel)
+        player1StartLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            player1StartLabel.topAnchor.constraint(equalTo: player1Label.bottomAnchor, constant: 20),
+            player1StartLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -20),
+            player1StartLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20)
+        ])
+    }
+    
     private func setupPlayer2LabelConstraints() {
         addSubview(player2Label)
         player2Label.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +113,16 @@ class ChessBoardView: UIView {
             player2Label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -20),
             player2Label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20),
             player2Label.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20)
+        ])
+    }
+    
+    private func setupPlayer2StartLabelConstraints() {
+        addSubview(player2StartLabel)
+        player2StartLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            player2StartLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -20),
+            player2StartLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20),
+            player2StartLabel.bottomAnchor.constraint(equalTo: player2Label.bottomAnchor, constant: -40)
         ])
     }
     
