@@ -34,5 +34,5 @@ enum PieceColor: String {
 struct ChessPiece {
     var pieceCount: Int
     var currentSpot: (Int, Int)
-    var piceType: String
+    var pieceType: String
 }

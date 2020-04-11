@@ -29,6 +29,7 @@
 		6C06881B244118EB00E8C090 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06881A244118EB00E8C090 /* ProfileViewController.swift */; };
 		6CE96CBF24411A210036399D /* ChessBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE96CBE24411A210036399D /* ChessBoardView.swift */; };
 		6CE96CC1244124B80036399D /* ChessPieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE96CC0244124B80036399D /* ChessPieces.swift */; };
+		6CE96CC3244172CC0036399D /* PieceMovementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE96CC2244172CC0036399D /* PieceMovementManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		6C06881A244118EB00E8C090 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6CE96CBE24411A210036399D /* ChessBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardView.swift; sourceTree = "<group>"; };
 		6CE96CC0244124B80036399D /* ChessPieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPieces.swift; sourceTree = "<group>"; };
+		6CE96CC2244172CC0036399D /* PieceMovementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceMovementManager.swift; sourceTree = "<group>"; };
 		C03FC0E567E068CB2D00A54D /* Pods-ChessBotProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessBotProject.debug.xcconfig"; path = "Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A65B0249009B1FF163F97B /* Pods-ChessBotProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessBotProject.release.xcconfig"; path = "Target Support Files/Pods-ChessBotProject/Pods-ChessBotProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				6CE96CC0244124B80036399D /* ChessPieces.swift */,
+				6CE96CC2244172CC0036399D /* PieceMovementManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				6C0687E2243E820000E8C090 /* Date+Extension.swift in Sources */,
 				6C0687F1243E8A4300E8C090 /* ChessPlayViewController.swift in Sources */,
 				6C0687ED243E854D00E8C090 /* DatabaseService.swift in Sources */,
+				6CE96CC3244172CC0036399D /* PieceMovementManager.swift in Sources */,
 				6CE96CC1244124B80036399D /* ChessPieces.swift in Sources */,
 				6C0688192441176C00E8C090 /* ChessBoardCell.swift in Sources */,
 				6C0687E4243E820000E8C090 /* UIViewController+AlertExtension.swift in Sources */,
