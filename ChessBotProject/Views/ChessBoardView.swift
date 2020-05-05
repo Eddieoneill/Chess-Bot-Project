@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class ChessBoardView: UIView {
     
     public lazy var collectionView: UICollectionView = {
